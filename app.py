@@ -53,9 +53,9 @@ class QQMusic:
         self.lyric_url = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg'
 
     def set_cookies(self, cookie_str):
-        cookies = {}
-        for cookie in cookie_str.
-RK=NbExXdNzOF; ptcz=2437deb33c241da39734b4719fe4a46e7fcd7c92f53edfeb5ccdc1c985f093a6; eas_sid=X1J7k2e7G3z674B1A5l3l9Y4s1; pgv_pvid=1798245525; fqm_pvqid=b437288c-6673-429a-8917-5212e12f3f4e; fqm_sessionid=d7c5cac1-c71b-43f0-8568-f91c95bee026; pgv_info=ssid=s6040894328; ts_uid=778208185; _qpsvr_localtk=0.8749468285757196; login_type=1; euin=7ecloKoPoiEi; psrf_access_token_expiresAt=1735015329; tmeLoginType=2; wxunionid=; psrf_qqunionid=C380DEF19C998F93931608D3B112E063; psrf_qqopenid=1F55A8DDE3637E631DE6C42C0FEC921B; qm_keyst=Q_H_L_63k3NRFSCejGYGk2uVIm6AtslY7wPy8ermZqO3CkBTGlAbtmhTLERbhQuS2apXUnSKab1bFI423aDoxZyzDVJOQ; music_ignore_pskey=202306271436Hn@vBj; qqmusic_key=Q_H_L_63k3NRFSCejGYGk2uVIm6AtslY7wPy8ermZqO3CkBTGlAbtmhTLERbhQuS2apXUnSKab1bFI423aDoxZyzDVJOQ; psrf_musickey_createtime=1734410529; psrf_qqrefresh_token=6411C145CE9F74D56F4F7914B5DADBAA; wxrefresh_token=; wxopenid=; psrf_qqaccess_token=6C76EACEA65606921E12074BBFF9A234; uin=487134393; ts_last=y.qq.com/('; '):
+        cookies = {
+RK=NbExXdNzOF; ptcz=2437deb33c241da39734b4719fe4a46e7fcd7c92f53edfeb5ccdc1c985f093a6; eas_sid=X1J7k2e7G3z674B1A5l3l9Y4s1; pgv_pvid=1798245525; fqm_pvqid=b437288c-6673-429a-8917-5212e12f3f4e; ts_uid=778208185; euin=7ecloKoPoiEi; psrf_access_token_expiresAt=1735015329; tmeLoginType=2; wxunionid=; psrf_qqunionid=C380DEF19C998F93931608D3B112E063; psrf_qqopenid=1F55A8DDE3637E631DE6C42C0FEC921B; qm_keyst=Q_H_L_63k3NRFSCejGYGk2uVIm6AtslY7wPy8ermZqO3CkBTGlAbtmhTLERbhQuS2apXUnSKab1bFI423aDoxZyzDVJOQ; music_ignore_pskey=202306271436Hn@vBj; qqmusic_key=Q_H_L_63k3NRFSCejGYGk2uVIm6AtslY7wPy8ermZqO3CkBTGlAbtmhTLERbhQuS2apXUnSKab1bFI423aDoxZyzDVJOQ; psrf_musickey_createtime=1734410529; psrf_qqrefresh_token=6411C145CE9F74D56F4F7914B5DADBAA; wxrefresh_token=; wxopenid=; psrf_qqaccess_token=6C76EACEA65606921E12074BBFF9A234; uin=487134393; fqm_sessionid=f204cea9-8bba-4af8-963d-4375c9f2681f; pgv_info=ssid=s4131726384; ts_last=y.qq.com/}
+        for cookie in cookie_str.split('; '):
             key, value = cookie.split('=', 1)
             cookies[key] = value
         self.cookies = cookies
